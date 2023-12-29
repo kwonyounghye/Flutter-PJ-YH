@@ -7,6 +7,18 @@ class RecipeTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    // 상단여백 : only(top/left/right/bottom)
+     return Padding(
+       padding: const EdgeInsets.only(top:20.0),
+       child: Center(
+         child: Text(
+          "황금 레시피",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+             ),
+       ),
+     );
   }
 }
